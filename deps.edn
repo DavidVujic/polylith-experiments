@@ -1,5 +1,5 @@
 {:polylith {:vcs "git"
-            :top-namespace "polylith-experiments"
+            :top-namespace "example"
             :interface-ns "interface"
             :default-profile-name "default"
             :compact-views #{}

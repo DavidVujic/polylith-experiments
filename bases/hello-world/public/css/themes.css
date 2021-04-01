@@ -1,0 +1,60 @@
+/* Got this from https://alexandersandberg.com/theme-switcher/ */
+
+:root {
+  /* Dark mode */
+  --dark-switch-shadow: #fce477;
+  --dark-switch-icon: "☀️";
+  --dark-text: #f7f7f7;
+  --dark-bg: #222430;
+
+  /* Light mode */
+  --light-switch-shadow: #373d4e;
+  --light-switch-icon: "🌑";
+  --light-text: #222430;
+  --light-bg: #f7f7f7;
+
+  /* Default mode */
+  --switch-shadow-color: var(--dark-switch-shadow);
+  --switch-icon: var(--dark-switch-icon);
+  --switch-text: var(--dark-switch-text);
+  --text-color: var(--dark-text);
+  --bg-color: var(--dark-bg);
+}
+
+/* Switched mode */
+.theme-switch:checked ~ #page {
+  --switch-shadow-color: var(--light-switch-shadow);
+  --switch-icon: var(--light-switch-icon);
+  --switch-text: var(--light-switch-text);
+  --text-color: var(--light-text);
+  --bg-color: var(--light-bg);
+}
+
+/* Theme switcher */
+.theme-switch { /* Hides the checkbox */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.switch-label {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 0 0;
+}
+
+.switch-label::before {
+  content: var(--switch-icon);
+  font-size: 30px;
+  text-shadow: 0 0 15px var(--switch-shadow-color);
+}
+
+#page {
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100%;
+  transition: color .5s, background-color .5s;
+}

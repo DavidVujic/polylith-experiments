@@ -1,0 +1,9 @@
+{:paths ["../../components/cljs/hello-world/src"
+                "../../components/cljs/theme-toggle/src"
+                "../../components/cljs/greeting/src"]
+ :deps {reagent/reagent {:mvn/version "1.0.0"}
+        re-frame/re-frame {:mvn/version "1.1.2"}}
+ :aliases
+ {:shadow-cljs
+  {:extra-deps {thheller/shadow-cljs {:mvn/version <latest>}}
+   :main-opts ["-m" "shadow.cljs.devtools.cli"]}}}

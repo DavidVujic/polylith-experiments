@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths ["../../components/cljs/hello-world/src"
+                "../../components/cljs/theme-toggle/src"
+                "../../components/cljs/greeting/src"]
+
+ :dependencies [[reagent "1.0.0"]
+                [re-frame "1.1.2"]]
+
+ :dev-http {8080 "../../bases/hello-world/public"}
+ :builds   {:app {:target     :browser
+                  :output-dir "../../bases/hello-world/public/js"
+                  :asset-path "/js"
+                  :modules    {:main {:entries [example.hello-world.view]}}
+                  :devtools   {:after-load example.hello-world.view/main}
+                  :release    {:compiler-options {:optimizations :advanced}}}
+
+            :tests {:target   :browser-test
+                    :test-dir "out/browser-test"
+                    :devtools {:http-port 8081
+                               :http-root "out/browser-test"}}}}
