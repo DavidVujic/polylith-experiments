@@ -1,10 +1,10 @@
 ;; shadow-cljs configuration
 {:deps {:aliases [:cljs]}
 
- :dev-http {8080 ["bases/cljs/public/hello_world"]}
+ :dev-http {8080 ["bases/views/public/hello_world"]}
 
  :builds {:hello-world-app {:target     :browser
-                            :output-dir "bases/cljs/public/hello_world/js"
+                            :output-dir "bases/views/public/hello_world/js"
                             :asset-path "/js"
                             :modules    {:main {:entries [hello-world.app]}}
                             :devtools   {:after-load hello-world.app/main}
