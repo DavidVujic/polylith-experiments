@@ -1,2 +1,7 @@
 {:paths []
- :deps  {}}
+ :deps  {}
+ :aliases {:test {:extra-paths []}}}
+
+
+;; TODO: find out why this message from the poly cli tool
+;; It's recommended to add an alias to :project-to-alias in ./deps.edn for the hello-world-lambda project.

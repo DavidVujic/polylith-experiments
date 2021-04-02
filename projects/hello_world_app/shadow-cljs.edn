@@ -1,8 +1,9 @@
 ;; shadow-cljs configuration
-{:source-paths ["../../Bases/cljs/main"
-                "../../bases/cljs/test"
+{:source-paths ["../../bases/views/main"
+                "../../bases/views/test"
                 "../../components/cljs/main"
-                "../../components/cljs/test"]
+                "../../components/cljs/test"
+                "../../components/message-parser/src"]
 
  :dependencies [[reagent "1.0.0"]
                 [re-frame "1.1.2"]]
