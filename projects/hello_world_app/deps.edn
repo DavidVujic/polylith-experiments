@@ -1,7 +1,2 @@
-{:paths ["bases/cljs/main"
-         "bases/cljs/test"
-         "components/cljs/main"
-         "components/cljs/test"]
- :deps  {thheller/shadow-cljs {:mvn/version "2.12.1"}
-         reagent/reagent      {:mvn/version "1.0.0"}
-         re-frame/re-frame    {:mvn/version "1.1.2"}}}
+{:paths []
+ :deps  {}}
