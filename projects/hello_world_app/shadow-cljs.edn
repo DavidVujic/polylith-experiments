@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths ["../../Bases/cljs/main"
+                "../../bases/cljs/test"
+                "../../components/cljs/main"
+                "../../components/cljs/test"]
+
+ :dependencies [[reagent "1.0.0"]
+                [re-frame "1.1.2"]]
+
+ :builds {:app {:target     :browser
+                :output-dir "../../bases/cljs/public/hello_world/js"
+                :asset-path "/js"
+                :modules    {:main {:entries [hello-world.app]}}
+                :devtools   {:after-load hello-world.app/main}
+                :release    {:compiler-options {:optimizations :advanced}}}
+
+          :tests {:target   :browser-test
+                  :test-dir "out/browser-test"
+                  :devtools {:http-port 8081
+                             :http-root "out/browser-test"}}}}

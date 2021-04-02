@@ -1,5 +1,4 @@
 node_modules/
-../../bases/hello-world/public/js/
 .cpcache/
 .shadow-cljs/
 /target
