@@ -1,6 +1,8 @@
+deploy/
 node_modules/
 .cpcache/
 .shadow-cljs/
+out/
 /target
 /checkouts
 /src/gen

@@ -9,10 +9,8 @@
                 [re-frame "1.1.2"]]
 
  :builds {:app {:target     :browser
-                :output-dir "../../bases/views/public/hello_world/js"
-                :asset-path "/js"
+                :output-dir "deploy/js"
                 :modules    {:main {:entries [hello-world.app]}}
-                :devtools   {:after-load hello-world.app/main}
                 :release    {:compiler-options {:optimizations :advanced}}}
 
           :tests {:target   :browser-test

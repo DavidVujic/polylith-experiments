@@ -7,8 +7,7 @@
                             :output-dir "bases/views/public/hello_world/js"
                             :asset-path "/js"
                             :modules    {:main {:entries [hello-world.app]}}
-                            :devtools   {:after-load hello-world.app/main}
-                            :release    {:compiler-options {:optimizations :advanced}}}
+                            :devtools   {:after-load hello-world.app/main}}
 
           :tests {:target   :browser-test
                   :test-dir "out/browser-test"
