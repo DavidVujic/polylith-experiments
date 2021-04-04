@@ -1,1 +1,0 @@
-(ns example.mistereval.interface)
