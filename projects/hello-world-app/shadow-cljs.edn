@@ -1,16 +1,16 @@
 ;; shadow-cljs configuration
-{:source-paths ["../../bases/views/main"
-                "../../bases/views/test"
-                "../../components/cljs/main"
-                "../../components/cljs/test"
-                "../../components/message-parser/src"]
+{:source-paths ["../../bases/hello_world/src"
+                "../../components/greeting/src"
+                "../../components/hello_world/src"
+                "../../components/theme_toggle/src"
+                "../../components/message_parser/src"]
 
  :dependencies [[reagent "1.0.0"]
                 [re-frame "1.1.2"]]
 
  :builds {:app {:target     :browser
                 :output-dir "deploy/js"
-                :modules    {:main {:entries [hello-world.app]}}
+                :modules    {:main {:entries [example.hello-world.app]}}
                 :release    {:compiler-options {:optimizations :advanced}}}
 
           :tests {:target   :browser-test

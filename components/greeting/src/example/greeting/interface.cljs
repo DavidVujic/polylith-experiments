@@ -1,4 +1,4 @@
-(ns greeting.interface
+(ns example.greeting.interface
   (:require [example.message-parser.interface :as message-parser]))
 
 (defn- greet []

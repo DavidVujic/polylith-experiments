@@ -10,6 +10,8 @@ package-lock.json
 /src/gen
 out/
 
+bases/hello_world/public/js/
+
 pom.xml
 pom.xml.asc
 *.iml

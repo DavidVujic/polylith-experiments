@@ -1,4 +1,4 @@
-(ns theme-toggle.interface)
+(ns example.theme-toggle.interface)
 
 (defn theme-toggle-field [toggle-fn]
   [:input {:type       "checkbox"

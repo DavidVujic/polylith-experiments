@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "clean": "rm -rf ./deploy",
-    "copy:css": "cp -r ../../bases/views/public/hello_world/css ./deploy",
-    "copy:html": "cp ../../bases/views/public/hello_world/index.html ./deploy",
+    "copy:css": "cp -r ../../bases/hello_world/public/css ./deploy",
+    "copy:html": "cp ../../bases/hello_world/public/index.html ./deploy",
     "copy": "npm run copy:css && npm run copy:html",
     "shadow:release": "shadow-cljs release app",
     "release": "npm run clean && npm run shadow:release && npm run copy"

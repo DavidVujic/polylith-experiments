@@ -1,4 +1,4 @@
-(ns hello-world.subs
+(ns example.hello-world.subs
   (:require [re-frame.core :as rf]))
 
 ; Defining shorthands for re-frame subscribe

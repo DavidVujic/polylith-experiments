@@ -1,5 +1,5 @@
-{:paths ["../../bases/hello-world-lambda/src"
-         "../../components/message-parser/src"]
+{:paths ["../../bases/hello_world_lambda/src"
+         "../../components/message_parser/src"]
 
  :deps {org.clojure/clojure                {:mvn/version "1.10.3"}
         org.clojure/tools.deps.alpha       {:mvn/version "0.11.905"}

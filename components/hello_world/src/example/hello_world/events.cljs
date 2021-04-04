@@ -1,4 +1,4 @@
-(ns hello-world.events
+(ns example.hello-world.events
   (:require [re-frame.core :as rf]))
 
 (rf/reg-event-db

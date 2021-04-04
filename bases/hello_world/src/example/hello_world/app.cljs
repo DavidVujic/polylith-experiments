@@ -1,6 +1,6 @@
-(ns hello-world.app
+(ns example.hello-world.app
   (:require [reagent.dom :as rdom]
-            [hello-world.view :as view]))
+            [example.hello-world.view :as view]))
 
 (defn main-element []
   (-> js/document (.getElementById "app")))
