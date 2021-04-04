@@ -37,7 +37,7 @@ and they will be loaded as expected in the ClojureScript REPL.
 ### Tooling support?
 Polylith has a very nice and useful tool to support creating building blocks and to verify the setup. 
 You can create components, bases and projects - as long as it is Clojure. 
-For ClojureScript, you will have to create components manually. But if you are lazy, like me, just create a Clojure component with the poly tool as you would for Clojure, 
+For ClojureScript, you will have to create components manually. But if you are lazy, like me, just create a component with the poly tool as you would for Clojure, 
 and simply rename the file extension to `cljs` or `cljc` afterwards.
 
 ### Editor support?
