@@ -22,7 +22,8 @@ Cljc is Clojure code that can be consumed by both frontend and backend code. Thi
 building things just like with LEGO bricks and baseplates.
 
 ### All the things?
-I'll leave the question if ClojureScript and Clojure really should live in the same ecosystem unanswered and hope to get feedback from the community. 
+I'll leave the question if ClojureScript and Clojure really should live in the same ecosystem unanswered and hope to get feedback from the community. In this example,
+all components are in the same place. Should the building blocks be separated somehow, or is it good enough to have both LEGO and DUPLO in the same box?
 __What are your thoughts about it?__
 
 ### Do we still have the Polylith one-REPL experience?
